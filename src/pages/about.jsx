@@ -67,11 +67,11 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I&apos;ve loved to build / create things for as long as I can remember. Since I started learning to code in 
-                2015, my creativity has &quot;scewed digital.&quot; Before 2015, I was mainly creative by pursuing things like photography and writing in my spare time. Now almost eight years later, I have fun building
+                2015, my creativity has &quot;scewed digital.&quot; Before 2015, I mainly pursuing things like photography and writing in my spare time, and was creative in that way! Now almost eight years later, while I still enjoy writing and photography, I also have fun building
                 APIs in Node, frontend websites in React, and integrating apps with third-party libraries and APIs for work and outside of work. 
               </p>
               <p>
-                Learning - that is my second passion. I&apos;m fascinated recently by the study of leadership, entreprenership, and my dog Tucker. 
+                Learning...this is my second passion. I&apos;m fascinated recently by the study of leadership, entreprenership, and my dog Tucker. 
                 Seriously, how did he get to be so darn cute? ha! 
               </p>
               <p>
