@@ -139,7 +139,7 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'IntegrityPro Consulting',
+      company: 'IntegrityPro Consulting LLC',
       title: 'ServiceNow Technical Consultant',
       logo: logoIPC,
       start: '2022',
@@ -149,7 +149,7 @@ function Resume() {
       },
     },
     {
-      company: 'WholePoint Systmes',
+      company: 'WholePoint Systems LLC',
       title: 'ServiceNow Developer',
       logo: logoWPS,
       start: '2021',
