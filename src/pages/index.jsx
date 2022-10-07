@@ -265,7 +265,7 @@ export default function Home({ articles }) {
             Software developer,  learner, and creator
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Dan, a software developer based in Conneticut. I work in a platform called ServiceNow but also enjoy working in the MERN stack.  
+          I’m Dan, a software developer based in Conneticut. I work in a platform called ServiceNow and also enjoy building on the MERN stack.  
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
