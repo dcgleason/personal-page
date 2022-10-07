@@ -67,7 +67,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I&apos;ve loved to build / create things for as long as I can remember. Since I started learning to code in 
-                2015, my creativity has &quot;scewed digital.&quot; Before 2015, I was mainly pursuing things like photography and writing in my spare time, and was able to stay creative in those ways. Now almost eight years later, while I still enjoy writing and photography, I also have fun building
+                2015, my creativity has &quot;scewed digital.&quot; Before 2015, I was able to stay creative by mainly pursuing things like photography and writing in my spare time. Now, almost eight years later, while I still enjoy writing and photography, I also have fun building
                 APIs in Node, frontend websites in React, and apps on the Now Platform. 
               </p>
               <p>
