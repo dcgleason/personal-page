@@ -11,7 +11,7 @@ import logoBundle from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Bundle - Frontnd',
+    name: 'Bundle - Frontend',
     description:
       'Built using React.js',
     link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'github.com' },
