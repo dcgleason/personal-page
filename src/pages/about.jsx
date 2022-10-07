@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <p>
                 My passion for learning and creating has led me into a wide-array of fields since I left college in 2013 and has given me experiences I wouldn&apos;t trade anything for. For the last 3 years,
-                I have been lucky enough to work and develop solutions in the IT field on a platform called ServiceNow (previously mentioned). Most recently in addition to my day job, I am working on nights and weekends on a personal project I&apos;m calling <a href='https://usebundle.co' className='hover:text-red-800 text-red-500'>Bundle.</a>
+                I have been lucky enough to work in the IT field on a platform called ServiceNow (previously mentioned). Most recently in addition to my day job, I am working on nights and weekends on a personal project I&apos;m calling <a href='https://usebundle.co' className='hover:text-red-800 text-red-500'>Bundle.</a>
         
               </p>
               <p>
