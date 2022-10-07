@@ -71,12 +71,11 @@ export default function About() {
                 APIs in Node, frontend websites in React, and integrating apps with third-party libraries and APIs for work and outside of work. 
               </p>
               <p>
-                Learning...this is my second passion. I&apos;m fascinated recently by the study of leadership, entreprenership, and my dog Tucker. 
-                Seriously, how did he get to be so darn cute? ha! 
+                Learning...this is my second passion. I&apos;m fascinated recently by the study of leadership, entreprenership, and all things ServiceNow.
               </p>
               <p>
-                Jokes aside, my passion for learning and creating has led me into a wide-array of fields since I left college in 2013 and gave me experiences I wouldn&apos;t trade anything for. For the last 3 years,
-                I have been lucky enough to work in IT, in a very versitile platform called ServiceNow. Most recently in addition to my 9-5, am working on nights and weekends on a project with 3 friends we are calling <a href='https://usebundle.co' className='hover:text-red-800 text-red-500'>Bundle.</a>
+                My passion for learning and creating has led me into a wide-array of fields since I left college in 2013 and gave me experiences I wouldn&apos;t trade anything for. For the last 3 years,
+                I have been lucky enough to work in IT, in ServiceNow. Most recently in addition to my day job, I am working on nights and weekends on a personal project I&apos;m calling <a href='https://usebundle.co' className='hover:text-red-800 text-red-500'>Bundle.</a>
         
               </p>
               <p>
