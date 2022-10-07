@@ -56,7 +56,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Things I’ve made trying to put my dent in the universe."
-        intro="Below is my most recent work. Feel free to contact me if you have any questions."
+        intro="Below is my most recent personal work. Feel free to contact me if you have any questions."
       >
         <ul
           role="list"

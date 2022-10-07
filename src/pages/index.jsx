@@ -24,6 +24,7 @@ import logoScribe from '@/images/logos/scribe.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
+import Testimonials from '../components/Testimonials'
 
 function MailIcon(props) {
   return (
@@ -301,6 +302,7 @@ export default function Home({ articles }) {
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />
+            <Testimonials/>
           </div>
         </div>
       </Container>
