@@ -11,14 +11,7 @@ import logoBundle from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Bundle',
-    description:
-      'The worlds most meaningful surprise',
-    link: { href: 'http://usebundle.co', label: 'usebundle.co' },
-    logo: logoBundle,
-  },
-  {
-    name: 'Bundle - landing page',
+    name: 'Bundle - Frontnd',
     description:
       'Built using React.js',
     link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'github.com' },
