@@ -113,6 +113,8 @@ function Newsletter() {
     <form
       action="https://app.convertkit.com/forms/3680691/subscriptions"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      method="post" 
+      data-sv-form="3680691"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
