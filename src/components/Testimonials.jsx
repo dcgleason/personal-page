@@ -8,7 +8,7 @@ import { Fragment, useEffect, useRef } from 'react'
 
 const Testimonials = () => {
     return (
-        <section className="overflow-hidden bg-gray-50 py-12 md:py-20 lg:py-24">
+        <section className="overflow-hidden bg-gray-50 py-12 md:py-10 lg:py-12">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <blockquote className="mt-10">
