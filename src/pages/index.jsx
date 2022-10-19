@@ -214,7 +214,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="https://drive.google.com/file/d/1_DdrmG9oCk67wO4mKpnSV4m4h3BduSlI/view?usp=sharing" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.google.com/file/d/1EpvWorliS0EJXN1MOMiUttj6MY5EojJL/view?usp=sharing" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
