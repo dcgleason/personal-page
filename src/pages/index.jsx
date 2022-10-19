@@ -258,7 +258,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Dan, a software developer and creator based in Conneticut. I work in ServiceNow, but enjoy developing in many different spaces using different tools and frameworks."
+          content="I’m Dan, a software developer and creator based in Connecticut. I work in ServiceNow, but enjoy developing in many different spaces using different tools and frameworks."
         />
       </Head>
       <Container className="mt-9">
@@ -267,7 +267,7 @@ export default function Home({ articles }) {
             Software developer,  learner, and creator
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Dan, a software developer based in Conneticut. I work in a platform called ServiceNow and also enjoy building apps with the MERN stack.  
+          I’m Dan, a software developer based in Connecticut. I work in a platform called ServiceNow and also enjoy building apps with the MERN stack.  
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
