@@ -13,14 +13,14 @@ const projects = [
   {
     name: 'Bundle - Frontend',
     description:
-      'Built using React.js',
+      'Built using React.js and Next.js.',
     link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'github.com' },
     logo: logoBundle,
   },
   {
     name: 'Bundle - API',
     description:
-      'Built in Node.js and Express.js. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
+      'Built in Node.js, Express.js, uses Mongoose. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
     link: { href: 'https://github.com/dcgleason/yay-api', label: 'github.com' },
     logo: logoBundle,
   }
