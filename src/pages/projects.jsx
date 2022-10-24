@@ -20,7 +20,7 @@ const projects = [
   {
     name: 'Bundle - API',
     description:
-      'Build in Node.js and Express.js. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
+      'Built in Node.js and Express.js. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
     link: { href: 'https://github.com/dcgleason/yay-api', label: 'github.com' },
     logo: logoBundle,
   }
