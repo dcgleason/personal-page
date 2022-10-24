@@ -44,7 +44,7 @@ export default function Projects() {
         <title>Projects - Spencer Sharp</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="My most recent personal projects."
         />
       </Head>
       <SimpleLayout
