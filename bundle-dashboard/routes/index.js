@@ -46,7 +46,7 @@ import profilePicture from "/assets/images/team-3.jpg";
 const routes = [
   {
     type: "collapse",
-    name: "Brooklyn Alice",
+    name: "Bundle",
     key: "brooklyn-alice",
     icon: <MDAvatar src={profilePicture.src} alt="Brooklyn Alice" size="sm" />,
     collapse: [

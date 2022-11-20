@@ -33,7 +33,7 @@ const boards = {
   columns: [
     {
       id: uuidv4(),
-      title: "Backlog",
+      title: "Column 1",
       cards: [
         {
           id: uuidv4(),
@@ -59,7 +59,7 @@ const boards = {
     },
     {
       id: uuidv4(),
-      title: "In progress",
+      title: "Column 2",
       cards: [
         {
           id: uuidv4(),
@@ -99,7 +99,7 @@ const boards = {
     },
     {
       id: uuidv4(),
-      title: "In review",
+      title: "Column 3",
       cards: [
         {
           id: uuidv4(),
@@ -139,7 +139,7 @@ const boards = {
     },
     {
       id: uuidv4(),
-      title: "Done",
+      title: "Column 4",
       cards: [
         {
           id: uuidv4(),
