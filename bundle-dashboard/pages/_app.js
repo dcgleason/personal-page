@@ -187,7 +187,7 @@ function Main({ Component, pageProps }) {
           <Sidenav
             color={sidenavColor}
             brand={brandIcon}
-            brandName="Material Dashboard PRO"
+            brandName="Bundle"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
@@ -213,7 +213,7 @@ function MyApp({
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="shortcut icon" href={favicon.src} />
           <link rel="apple-touch-icon" sizes="76x76" href={appleIcon.src} />
-          <title>Next Material Dashboard 2 PRO</title>
+          <title>Bundle</title>
         </Head>
         <Main Component={Component} pageProps={pageProps} />
       </CacheProvider>

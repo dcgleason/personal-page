@@ -1,22 +1,10 @@
-/**
-=========================================================
-* NextJS Material Dashboard 2 PRO - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/nextjs-material-dashboard-pro
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+import React, { Component } from "react";
+import GridLayout from 'react-grid-layout';
+import { Responsive as ResponsiveGridLayout } from 'react-grid-layout';
+import { Responsive, WidthProvider } from "react-grid-layout";
 
 // @mui material components
-import Grid from "@mui/material/Grid";
-import Tooltip from "@mui/material/Tooltip";
-import Icon from "@mui/material/Icon";
+import Card from "@mui/material/Card";
 
 // NextJS Material Dashboard 2 PRO components
 import MDBox from "/components/MDBox";
@@ -25,209 +13,171 @@ import MDTypography from "/components/MDTypography";
 // NextJS Material Dashboard 2 PRO examples
 import DashboardLayout from "/examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "/examples/Navbars/DashboardNavbar";
-import Footer from "/examples/Footer";
-import ReportsBarChart from "/examples/Charts/BarCharts/ReportsBarChart";
-import ReportsLineChart from "/examples/Charts/LineCharts/ReportsLineChart";
-import ComplexStatisticsCard from "/examples/Cards/StatisticsCards/ComplexStatisticsCard";
-import BookingCard from "/examples/Cards/BookingCard";
 
-// Anaytics dashboard components
-import SalesByCountry from "/pagesComponents/dashboards/analytics/components/SalesByCountry";
 
-// Data
-import reportsBarChartData from "/pagesComponents/dashboards/analytics/data/reportsBarChartData";
-import reportsLineChartData from "/pagesComponents/dashboards/analytics/data/reportsLineChartData";
+ResponsiveGridLayout = WidthProvider(Responsive);
 
-// Images
-import booking1 from "/assets/images/products/product-1-min.jpg";
-import booking2 from "/assets/images/products/product-2-min.jpg";
-import booking3 from "/assets/images/products/product-3-min.jpg";
-
-function Analytics() {
-  const { sales, tasks } = reportsLineChartData;
-
-  // Action buttons for the BookingCard
-  const actionButtons = (
-    <>
-      <Tooltip title="Refresh" placement="bottom">
-        <MDTypography
-          variant="body1"
-          color="primary"
-          lineHeight={1}
-          sx={{ cursor: "pointer", mx: 3 }}
-        >
-          <Icon color="inherit">refresh</Icon>
-        </MDTypography>
-      </Tooltip>
-      <Tooltip title="Edit" placement="bottom">
-        <MDTypography
-          variant="body1"
-          color="dark"
-          lineHeight={1}
-          sx={{ cursor: "pointer", mx: 3 }}
-        >
-          <Icon color="inherit">edit</Icon>
-        </MDTypography>
-      </Tooltip>
-    </>
-  );
-
-  return (
-    <DashboardLayout>
-      <DashboardNavbar />
-      <MDBox py={3}>
-        <Grid container>
-          <SalesByCountry />
-        </Grid>
-        <MDBox mt={6}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-                <ReportsBarChart
-                  color="dark"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
-                  chart={reportsBarChartData}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-                <ReportsLineChart
-                  color="success"
-                  title="daily sales"
-                  description={
-                    <>
-                      (<strong>+15%</strong>) increase in today sales.
-                    </>
-                  }
-                  date="updated 4 min ago"
-                  chart={sales}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-                <ReportsLineChart
-                  color="info"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
-                  chart={tasks}
-                />
-              </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox mt={1.5}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={3}>
-              <MDBox mb={1.5}>
-                <ComplexStatisticsCard
-                  color="dark"
-                  icon="weekend"
-                  title="Bookings"
-                  count={281}
-                  percentage={{
-                    color: "success",
-                    amount: "+55%",
-                    label: "than lask week",
-                  }}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <MDBox mb={1.5}>
-                <ComplexStatisticsCard
-                  color="info"
-                  icon="leaderboard"
-                  title="Today's Users"
-                  count="2,300"
-                  percentage={{
-                    color: "success",
-                    amount: "+3%",
-                    label: "than last month",
-                  }}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <MDBox mb={1.5}>
-                <ComplexStatisticsCard
-                  color="success"
-                  icon="store"
-                  title="Revenue"
-                  count="34k"
-                  percentage={{
-                    color: "success",
-                    amount: "+1%",
-                    label: "than yesterday",
-                  }}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={3}>
-              <MDBox mb={1.5}>
-                <ComplexStatisticsCard
-                  color="primary"
-                  icon="person_add"
-                  title="Followers"
-                  count="+91"
-                  percentage={{
-                    color: "success",
-                    amount: "",
-                    label: "Just updated",
-                  }}
-                />
-              </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox mt={2}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking1}
-                  title="Cozy 5 Stars Apartment"
-                  description='The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.'
-                  price="$899/night"
-                  location="Barcelona, Spain"
-                  action={actionButtons}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking2}
-                  title="Office Studio"
-                  description='The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the night life in London, UK.'
-                  price="$1.119/night"
-                  location="London, UK"
-                  action={actionButtons}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking3}
-                  title="Beautiful Castle"
-                  description='The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Milan.'
-                  price="$459/night"
-                  location="Milan, Italy"
-                  action={actionButtons}
-                />
-              </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-      </MDBox>
-      <Footer />
-    </DashboardLayout>
-  );
+class DemoComponent extends Component {
+    render() {
+        return (
+            <div >
+              Card-{this.props.color}  
+            </div>
+        )
+    }
 }
 
-export default Analytics;
+
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      value: true,
+    };
+  }
+
+  
+  render() {
+  var array = [];
+  var id = "a"
+
+  //if the remander is 0, x=1, if remainder is 1, x = 4, if remainder is 2, x=8
+  // numerator is the number / element of the array of or list of people who have written in --> query all contributors for a gift and put them in an array
+  // if(indexOf(array[i]) % 3 == 0) x = 0
+  // if(indexOf(array[i]) % 3 == 1) x = 4
+    // if(indexOf(array[i]) % 3 == 2) x = 8
+
+  //id = a unique value --> key = i in the for loop 
+
+  // y: 000, 111, 222, 333, 444, 555, --> counter, and a for loop going, adding the remainder OR the increment number divded by 3 i%3 (0, 1, 2, 3, )
+
+  // h: 1
+
+
+
+
+
+    for(var i =0; i<array.length; i++){
+      array.push({i: id.toString, x: 0 })
+    }
+
+
+    var layout = [
+      { i: "a", x: 0, y: 0, w: 4, h: 1 },
+      { i: "b", x: 4, y: 0, w: 4, h: 1 },
+      { i: "c", x: 8, y: 0, w: 4, h: 1 },
+      { i: "d", x: 0, y: 1, w: 4, h: 1 },
+      { i: "e", x: 4, y: 1, w: 4, h: 1 },
+      { i: "f", x: 8, y: 1, w: 4, h: 1 },
+      { i: "g", x: 8, y: 1, w: 4, h: 1 },
+      { i: "h", x: 0, y: 2, w: 4, h: 1 },
+      { i: "i", x: 4, y: 2, w: 4, h: 1 },
+      { i: "j", x: 8, y: 2, w: 4, h: 1 },
+      { i: "k", x: 0, y: 3, w: 4, h: 1 },
+      { i: "l", x: 4, y: 3, w: 4, h: 1 },
+      { i: "m", x: 8, y: 3, w: 4, h: 1 },
+      { i: "n", x: 0, y: 4, w: 4, h: 1 },
+      { i: "o", x: 4, y: 4, w: 4, h: 1 },
+      { i: "p", x: 8, y: 4, w: 4, h: 1 },
+      { i: "q", x: 0, y: 5, w: 4, h: 1 },
+      { i: "r", x: 4, y: 5, w: 4, h: 1 },
+      { i: "s", x: 8, y: 5, w: 4, h: 1 },
+      { i: "t", x: 0, y: 6, w: 4, h: 1 },
+      { i: "u", x: 4, y: 6, w: 4, h: 1 },
+      { i: "v", x: 8, y: 6, w: 4, h: 1 },
+      
+    ];
+    var layout1 = [
+      { i: "a", x: 0, y: 0, w: 6, h: 1 },
+      { i: "b", x: 6, y: 0, w: 6, h: 1 },
+      { i: "c", x: 0, y: 1, w: 6, h: 1 },
+      { i: "d", x: 6, y: 1, w: 6, h: 1 },
+      { i: "e", x: 0, y: 2, w: 6, h: 1 },
+      { i: "f", x: 6, y: 2, w: 6, h: 1 },
+    ];
+
+    var layout = { lg: this.state.value === true ? layout : layout1 };
+
+    return (
+      <DashboardLayout>
+      <div>
+        <ResponsiveGridLayout
+          className="layout"
+          layouts={layout}
+          breakpoints={{ lg: 1200 }}
+          cols={{ lg: 12 }}
+          rowHeight={100}
+          width={1200}
+        >
+          <div key="a" style={{ backgroundColor: "black" }}>
+            <DemoComponent color={"black"} />
+          </div>
+          <div key="b" style={{ backgroundColor: "green" }}>
+            <DemoComponent color={"green"} />
+          </div>
+          <div key="c" style={{ backgroundColor: "red" }}>
+            <DemoComponent color={"red"} />
+          </div>
+          <div key="d" style={{ backgroundColor: "blue" }}>
+            <DemoComponent color={"blue"} />
+          </div>
+          <div key="e" style={{ backgroundColor: "violet" }}>
+            <DemoComponent color={"violet"} />
+          </div>
+         <div key="f" style={{ backgroundColor: "blue" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="g" style={{ backgroundColor: "red" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="h" style={{ backgroundColor: "lemonchiffon" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="i" style={{ backgroundColor: "indigo" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="j" style={{ backgroundColor: "yellow" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="k" style={{ backgroundColor: "green" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="l" style={{ backgroundColor: "blue" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="m" style={{ backgroundColor: "purple" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="n" style={{ backgroundColor: "red" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="o" style={{ backgroundColor: "orange" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="p" style={{ backgroundColor: "yellow" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="q" style={{ backgroundColor: "green" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="r" style={{ backgroundColor: "blue" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="s" style={{ backgroundColor: "purple" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="t" style={{ backgroundColor: "red" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="u" style={{ backgroundColor: "orange" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+          <div key="v" style={{ backgroundColor: "yellow" }}>
+            <DemoComponent color={"lemonchiffon"} />
+          </div>
+        </ResponsiveGridLayout>
+      </div>
+      </DashboardLayout>
+    );
+  }
+}

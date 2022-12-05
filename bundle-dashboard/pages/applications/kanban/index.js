@@ -34,13 +34,8 @@ export default class App extends Component {
     this.state = {
       value: true,
     };
-    this.onHandle = this.onHandle.bind(this);
   }
-  onHandle() {
-    this.setState((prevState) => ({
-      value: !prevState.value,
-    }));
-  }
+
   
   render() {
   var array = [];
@@ -52,11 +47,21 @@ export default class App extends Component {
   // if(indexOf(array[i]) % 3 == 1) x = 4
     // if(indexOf(array[i]) % 3 == 2) x = 8
 
+  //id = a unique value --> key = i in the for loop 
+
+  // y: 000, 111, 222, 333, 444, 555, --> counter, and a for loop going, adding the remainder OR the increment number divded by 3 i%3 (0, 1, 2, 3, )
+
+  // h: 1
+
+
+
 
 
     for(var i =0; i<array.length; i++){
       array.push({i: id.toString, x: 0 })
     }
+
+
     var layout = [
       { i: "a", x: 0, y: 0, w: 4, h: 1 },
       { i: "b", x: 4, y: 0, w: 4, h: 1 },
@@ -96,10 +101,6 @@ export default class App extends Component {
     return (
       <DashboardLayout>
       <div>
-        <button style={{ marginLeft: "45%" }} onClick={this.onHandle}>
-          {this.state.value === true ? "Increase" : "Decrease"} Grid by 2
-          columns
-        </button>
         <ResponsiveGridLayout
           className="layout"
           layouts={layout}
@@ -123,55 +124,55 @@ export default class App extends Component {
           <div key="e" style={{ backgroundColor: "violet" }}>
             <DemoComponent color={"violet"} />
           </div>
-         <div key="f" style={{ backgroundColor: "lemonchiffon" }}>
+         <div key="f" style={{ backgroundColor: "blue" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="g" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="g" style={{ backgroundColor: "red" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
           <div key="h" style={{ backgroundColor: "lemonchiffon" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="i" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="i" style={{ backgroundColor: "indigo" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="j" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="j" style={{ backgroundColor: "yellow" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="k" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="k" style={{ backgroundColor: "green" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="l" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="l" style={{ backgroundColor: "blue" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="m" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="m" style={{ backgroundColor: "purple" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="n" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="n" style={{ backgroundColor: "red" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="o" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="o" style={{ backgroundColor: "orange" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="p" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="p" style={{ backgroundColor: "yellow" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="q" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="q" style={{ backgroundColor: "green" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="r" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="r" style={{ backgroundColor: "blue" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="s" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="s" style={{ backgroundColor: "purple" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="t" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="t" style={{ backgroundColor: "red" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="u" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="u" style={{ backgroundColor: "orange" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
-          <div key="v" style={{ backgroundColor: "lemonchiffon" }}>
+          <div key="v" style={{ backgroundColor: "yellow" }}>
             <DemoComponent color={"lemonchiffon"} />
           </div>
         </ResponsiveGridLayout>

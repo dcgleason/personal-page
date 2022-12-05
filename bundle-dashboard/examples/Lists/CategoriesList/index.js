@@ -95,7 +95,7 @@ function CategoriesList({ title, categories }) {
             }}
             passHref
           >
-            <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
+            {/* <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon> */}
           </MDTypography>
         </MDBox>
       </MDBox>
