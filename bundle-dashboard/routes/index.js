@@ -41,7 +41,7 @@ import MDAvatar from "/components/MDAvatar";
 import Icon from "@mui/material/Icon";
 
 // Images
-import profilePicture from "/assets/images/team-3.jpg";
+import profilePicture from "/assets/images/headshot-cropped.jpeg";
 
 const routes = [
   {
@@ -51,6 +51,11 @@ const routes = [
     icon: <MDAvatar src={profilePicture.src} alt="Brooklyn Alice" size="sm" />,
     collapse: [
       {
+        name: "My Information",
+        key: "profile-settings",
+        route: "/pages/account/settings",
+      },
+      {
         name: "Current Bundle Order",
         key: "notifications",
         route: "/pages/notifications",
@@ -59,11 +64,6 @@ const routes = [
         name: "Past Bundle Orders",
         key: "my-profile",
         route: "/pages/profile/profile-overview",
-      },
-      {
-        name: "My Billing information",
-        key: "profile-settings",
-        route: "/pages/account/settings",
       },
       {
         name: "Logout",

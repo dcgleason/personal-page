@@ -13,211 +13,61 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+import { useMemo } from "react";
+
+import dynamic from "next/dynamic";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 
 // NextJS Material Dashboard 2 PRO components
 import MDBox from "/components/MDBox";
-import MDTypography from "/components/MDTypography";
-import MDAlert from "/components/MDAlert";
-import MDButton from "/components/MDButton";
-import MDSnackbar from "/components/MDSnackbar";
 
 // NextJS Material Dashboard 2 PRO examples
 import DashboardLayout from "/examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "/examples/Navbars/DashboardNavbar";
 import Footer from "/examples/Footer";
+import EventCalendar from "/examples/Calendar";
 
-function Notifications() {
-  const [successSB, setSuccessSB] = useState(false);
-  const [infoSB, setInfoSB] = useState(false);
-  const [warningSB, setWarningSB] = useState(false);
-  const [errorSB, setErrorSB] = useState(false);
+// Calendar application components
+import Header from "/pagesComponents/applications/calendar/components/Header";
+import NextEvents from "/pagesComponents/applications/calendar/components/NextEvents";
+import ProductivityChart from "/pagesComponents/applications/calendar/components/ProductivityChart";
 
-  const openSuccessSB = () => setSuccessSB(true);
-  const closeSuccessSB = () => setSuccessSB(false);
-  const openInfoSB = () => setInfoSB(true);
-  const closeInfoSB = () => setInfoSB(false);
-  const openWarningSB = () => setWarningSB(true);
-  const closeWarningSB = () => setWarningSB(false);
-  const openErrorSB = () => setErrorSB(true);
-  const closeErrorSB = () => setErrorSB(false);
+// Data
+import calendarEventsData from "/pagesComponents/applications/calendar/data/calendarEventsData";
 
-  const alertContent = (name) => (
-    <MDTypography variant="body2" color="white">
-      A simple {name} alert with{" "}
-      <MDTypography
-        component="a"
-        href="#"
-        variant="body2"
-        fontWeight="medium"
-        color="white"
-      >
-        an example link
-      </MDTypography>
-      . Give it a click if you like.
-    </MDTypography>
-  );
-
-  const renderSuccessSB = (
-    <MDSnackbar
-      color="success"
-      icon="check"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
-      open={successSB}
-      onClose={closeSuccessSB}
-      close={closeSuccessSB}
-      bgWhite
-    />
-  );
-
-  const renderInfoSB = (
-    <MDSnackbar
-      color="info"
-      icon="notifications"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
-      open={infoSB}
-      onClose={closeInfoSB}
-      close={closeInfoSB}
-    />
-  );
-
-  const renderWarningSB = (
-    <MDSnackbar
-      color="warning"
-      icon="star"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
-      open={warningSB}
-      onClose={closeWarningSB}
-      close={closeWarningSB}
-      bgWhite
-    />
-  );
-
-  const renderErrorSB = (
-    <MDSnackbar
-      color="error"
-      icon="warning"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
-      open={errorSB}
-      onClose={closeErrorSB}
-      close={closeErrorSB}
-      bgWhite
-    />
-  );
-
+function Calendar() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <MDBox mt={6} mb={3}>
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12} lg={8}>
-            <Card>
-              <MDBox p={2}>
-                <MDTypography variant="h5">Alerts</MDTypography>
-              </MDBox>
-              <MDBox pt={2} px={2}>
-                <MDAlert color="primary" dismissible>
-                  {alertContent("primary")}
-                </MDAlert>
-                <MDAlert color="secondary" dismissible>
-                  {alertContent("secondary")}
-                </MDAlert>
-                <MDAlert color="success" dismissible>
-                  {alertContent("success")}
-                </MDAlert>
-                <MDAlert color="error" dismissible>
-                  {alertContent("error")}
-                </MDAlert>
-                <MDAlert color="warning" dismissible>
-                  {alertContent("warning")}
-                </MDAlert>
-                <MDAlert color="info" dismissible>
-                  {alertContent("info")}
-                </MDAlert>
-                <MDAlert color="light" dismissible>
-                  {alertContent("light")}
-                </MDAlert>
-                <MDAlert color="dark" dismissible>
-                  {alertContent("dark")}
-                </MDAlert>
-              </MDBox>
-            </Card>
+      <MDBox pt={3}>
+        <MDBox display="flex" justifyContent="flex-end" mt={1} mb={4} mx={2}>
+          <Header />
+        </MDBox>
+        <Grid container spacing={3}>
+          <Grid item xs={12} xl={9} sx={{ height: "max-content" }}>
+            {useMemo(
+              () => (
+                <EventCalendar
+                  initialView="dayGridMonth"
+                  initialDate="2021-08-10"
+                  events={calendarEventsData}
+                  selectable
+                  editable
+                />
+              ),
+              // eslint-disable-next-line react-hooks/exhaustive-deps
+              [calendarEventsData],
+            )}
           </Grid>
-
-          <Grid item xs={12} lg={8}>
-            <Card>
-              <MDBox p={2} lineHeight={0}>
-                <MDTypography variant="h5">Notifications</MDTypography>
-                <MDTypography
-                  variant="button"
-                  color="text"
-                  fontWeight="regular"
-                >
-                  Notifications on this page use Toasts from Bootstrap. Read
-                  more details here.
-                </MDTypography>
-              </MDBox>
-              <MDBox p={2}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6} lg={3}>
-                    <MDButton
-                      variant="gradient"
-                      color="success"
-                      onClick={openSuccessSB}
-                      fullWidth
-                    >
-                      success notification
-                    </MDButton>
-                    {renderSuccessSB}
-                  </Grid>
-                  <Grid item xs={12} sm={6} lg={3}>
-                    <MDButton
-                      variant="gradient"
-                      color="info"
-                      onClick={openInfoSB}
-                      fullWidth
-                    >
-                      info notification
-                    </MDButton>
-                    {renderInfoSB}
-                  </Grid>
-                  <Grid item xs={12} sm={6} lg={3}>
-                    <MDButton
-                      variant="gradient"
-                      color="warning"
-                      onClick={openWarningSB}
-                      fullWidth
-                    >
-                      warning notification
-                    </MDButton>
-                    {renderWarningSB}
-                  </Grid>
-                  <Grid item xs={12} sm={6} lg={3}>
-                    <MDButton
-                      variant="gradient"
-                      color="error"
-                      onClick={openErrorSB}
-                      fullWidth
-                    >
-                      error notification
-                    </MDButton>
-                    {renderErrorSB}
-                  </Grid>
-                </Grid>
-              </MDBox>
-            </Card>
+          <Grid item xs={12} xl={3}>
+            <MDBox mb={3}>
+              <NextEvents />
+            </MDBox>
+            <MDBox mb={3}>
+              <ProductivityChart />
+            </MDBox>
           </Grid>
         </Grid>
       </MDBox>
@@ -226,4 +76,4 @@ function Notifications() {
   );
 }
 
-export default Notifications;
+export default Calendar;
