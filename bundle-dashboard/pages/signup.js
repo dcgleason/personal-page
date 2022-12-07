@@ -29,7 +29,7 @@ import MDButton from "/components/MDButton";
 import CoverLayout from "/pagesComponents/authentication/components/CoverLayout";
 
 // Images
-import bgImage from "/assets/images/bg-sign-up-cover.jpeg";
+import bgImage from "/assets/images/love-background-one.jpg";
 
 function Cover() {
   return (
@@ -47,7 +47,7 @@ function Cover() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join us today
+            Sign up here
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
             Enter your email and password to register
@@ -103,7 +103,7 @@ function Cover() {
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
                 Already have an account?{" "}
-                <Link href="/authentication/sign-in/cover">
+                <Link href="/signin">
                   <a>
                     <MDTypography
                       variant="button"

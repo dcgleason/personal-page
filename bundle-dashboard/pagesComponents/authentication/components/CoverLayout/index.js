@@ -41,7 +41,7 @@ function CoverLayout({ coverHeight, image, children }) {
         action={{
           type: "external",
           route:
-            "https://creative-tim.com/product/nextjs-material-dashboard-pro",
+            "https://usebundle.co",
           label: "buy now",
         }}
         transparent

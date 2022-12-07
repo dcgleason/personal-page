@@ -38,7 +38,7 @@ import MDButton from "/components/MDButton";
 import BasicLayout from "/pagesComponents/authentication/components/BasicLayout";
 
 // Images
-import bgImage from "/assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "/assets/images/signin-bg-one.jpg";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -128,7 +128,7 @@ function Basic() {
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
                 Don&apos;t have an account?{" "}
-                <Link href="/authentication/sign-up/cover">
+                <Link href="/signup">
                   <a>
                     <MDTypography
                       variant="button"

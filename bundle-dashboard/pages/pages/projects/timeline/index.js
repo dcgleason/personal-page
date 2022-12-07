@@ -25,6 +25,7 @@ import DashboardNavbar from "/examples/Navbars/DashboardNavbar";
 import Footer from "/examples/Footer";
 import TimelineList from "/examples/Timeline/TimelineList";
 import TimelineItem from "/examples/Timeline/TimelineItem";
+import Address from '/pagesComponents/Address'
 
 // Data
 import timelineData from "/pagesComponents/pages/projects/timeline/data/timelineData";
@@ -48,21 +49,10 @@ function Timeline() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <MDBox my={3}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
-            <TimelineList title="Timeline with dotted line">
-              {renderTimelineItems}
-            </TimelineList>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <TimelineList title="Timeline with dotted line" dark>
-              {renderTimelineItems}
-            </TimelineList>
-          </Grid>
-        </Grid>
-      </MDBox>
-      <Footer />
+  
+                <Address/>
+
+
     </DashboardLayout>
   );
 }
