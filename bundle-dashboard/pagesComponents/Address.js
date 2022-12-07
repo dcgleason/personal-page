@@ -51,15 +51,9 @@ const Address = () => {
         <div className="md:col-span-1">
           <h3 className="text-lg font-medium leading-6 text-gray-900">Upload</h3>
           <p className="mt-1 text-sm text-gray-500">
-            Upload Contributor information here:
+            Upload CSV with contributor information here:
           </p>
         </div>
-        <div className="mt-5 space-y-6 md:col-span-2 md:mt-0">
-          <div className="grid grid-cols-3 gap-6">
-            <div className="col-span-3 sm:col-span-2">
-              <label htmlFor="company-website" className="block text-sm font-medium text-gray-700">
-                Upload CSV:
-              </label>
               <div className="mt-1 flex rounded-md">
 
                 <input
@@ -69,9 +63,7 @@ const Address = () => {
                  onChange={changeHandler}
                  style={{ display: "block", margin: "10px auto" }}
                 />
-              </div>
-            </div>
-          </div>
+
           </div>
       </div>
     </div>
@@ -126,7 +118,7 @@ const Address = () => {
         type="submit"
         className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
       >
-        Save
+        Upload
       </button>
     </div>
   </form>
