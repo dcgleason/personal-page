@@ -31,20 +31,6 @@ import Address from '/pagesComponents/Address'
 import timelineData from "/pagesComponents/pages/projects/timeline/data/timelineData";
 
 function Timeline() {
-  const renderTimelineItems = timelineData.map(
-    ({ color, icon, title, dateTime, description, badges, lastItem }) => (
-      <TimelineItem
-        key={title + color}
-        color={color}
-        icon={icon}
-        title={title}
-        dateTime={dateTime}
-        description={description}
-        badges={badges}
-        lastItem={lastItem}
-      />
-    ),
-  );
 
   return (
     <DashboardLayout>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import GridLayout from 'react-grid-layout';
 import { Responsive as ResponsiveGridLayout } from 'react-grid-layout';
 import { Responsive, WidthProvider } from "react-grid-layout";
@@ -14,21 +14,57 @@ import MDTypography from "/components/MDTypography";
 import DashboardLayout from "/examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "/examples/Navbars/DashboardNavbar";
 
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
-ResponsiveGridLayout = WidthProvider(Responsive);
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
-class DemoComponent extends Component {
-    render() {
-        return (
-            <div >
-              Card-{this.props.color}  
-            </div>
-        )
-    }
+function BasicModal() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  return (
+    <div>
+      <Button onClick={handleOpen}>Open modal</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
+  );
 }
 
 
-export default class App extends Component {
+ResponsiveGridLayout = WidthProvider(Responsive);
+
+
+
+
+export default class Grid extends Component {
   constructor() {
     super();
     this.state = {
@@ -110,70 +146,70 @@ export default class App extends Component {
           width={1200}
         >
           <div key="a" style={{ backgroundColor: "black" }}>
-            <DemoComponent color={"black"} />
+            <BasicModal/>
           </div>
           <div key="b" style={{ backgroundColor: "green" }}>
-            <DemoComponent color={"green"} />
+            <BasicModal />
           </div>
           <div key="c" style={{ backgroundColor: "red" }}>
-            <DemoComponent color={"red"} />
+            <BasicModal />
           </div>
           <div key="d" style={{ backgroundColor: "blue" }}>
-            <DemoComponent color={"blue"} />
+            <BasicModal  />
           </div>
           <div key="e" style={{ backgroundColor: "violet" }}>
-            <DemoComponent color={"violet"} />
+            <BasicModal  />
           </div>
          <div key="f" style={{ backgroundColor: "blue" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="g" style={{ backgroundColor: "red" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="h" style={{ backgroundColor: "lemonchiffon" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="i" style={{ backgroundColor: "indigo" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="j" style={{ backgroundColor: "yellow" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="k" style={{ backgroundColor: "green" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="l" style={{ backgroundColor: "blue" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="m" style={{ backgroundColor: "purple" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="n" style={{ backgroundColor: "red" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="o" style={{ backgroundColor: "orange" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="p" style={{ backgroundColor: "yellow" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="q" style={{ backgroundColor: "green" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="r" style={{ backgroundColor: "blue" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="s" style={{ backgroundColor: "purple" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal />
           </div>
           <div key="t" style={{ backgroundColor: "red" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="u" style={{ backgroundColor: "orange" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
           <div key="v" style={{ backgroundColor: "yellow" }}>
-            <DemoComponent color={"lemonchiffon"} />
+            <BasicModal  />
           </div>
         </ResponsiveGridLayout>
       </div>
