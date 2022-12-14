@@ -13,6 +13,9 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+
+// create an array of objects via a for loop from the results coming from the Gifts Database ç
+
 const dataTableData = {
   columns: [
     { Header: "name", accessor: "name", width: "20%" },
