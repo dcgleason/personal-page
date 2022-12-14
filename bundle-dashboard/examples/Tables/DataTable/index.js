@@ -289,7 +289,7 @@ function DataTable({
             )}
             {canNextPage && (
               <MDPagination item onClick={() => nextPage()}>
-                {/* <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon> */}
+                <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
               </MDPagination>
             )}
           </MDPagination>
