@@ -186,7 +186,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
             <MuiLink
               href={href}
               key={key}
-              target="_blank"
+           //   target="_blank"
               rel="noreferrer"
               sx={{ textDecoration: "none" }}
             >

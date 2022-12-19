@@ -78,17 +78,20 @@ const routes = [
     type: "collapse",
     name: "My Bundle book",
     key: "dashboards",
+    href: "http://localhost:3000/dashboard",
     icon: <Icon fontSize="medium">image</Icon>,
     collapse: [
       {
         name: "Edit book",
-        key: "analytics",
-        route: "/dashboards/analytics",
+        key: "edit",
+        route: "/dashboards/edit",
+        href: "http://localhost:3000/dashboards/edit"
       },
       {
         name: "Submit book",
-        key: "sales",
-        route: "/dashboards/sales",
+        key: "submit",
+        route: "/dashboards/submit",
+        href: "http://localhost:3000/dashboards/submit"
       },
     ],
   },
