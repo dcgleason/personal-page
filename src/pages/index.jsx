@@ -267,7 +267,7 @@ export default function Home({ articles }) {
             ServiceNow developer,  learner, and creator
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Danny, a ServiceNow developer based in Connecticut. I work with federal organizations primarily to help them improve the health of their CMDB, but worked in ITSM and ITAM spaces as well.  
+          I’m Danny, a ServiceNow developer based in Connecticut. I work with federal organizations primarily to help them improve the health of their CMDB but have experience in ITSM and ITAM spaces as well.  
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
