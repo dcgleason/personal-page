@@ -266,11 +266,11 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Danny Gleason - ServiceNow developer, creator, and learner
+          Danny Gleason - Software developer, creator, and learner
         </title>
         <meta
           name="description"
-          content="I’m Danny, a software developer and creator based in Connecticut. I work in ServiceNow, but enjoy developing in many different spaces using different tools and frameworks."
+          content="I’m Danny, a software developer and creator based in Connecticut. I work using a technology called ServiceNow, but enjoy developing in many different spaces using different tools and web development frameworks."
         />
       </Head>
       <Container className="mt-9">
@@ -279,7 +279,7 @@ export default function Home({ articles }) {
             ServiceNow developer,  learner, and creator
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Danny, a developer based in Connecticut. I work the platform called ServiceNow and and mainly focus my attention on improving data ServiceNow instance performance. I also enjoy developing in many different spaces using different tools and frameworks.  
+          I’m Danny, a developer based in Connecticut. I work the platform called ServiceNow and and mainly focus my attention on improving ServiceNow instance performance for my clients. I also enjoy developing in many different spaces using different tools and frameworks in my free time.  
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
