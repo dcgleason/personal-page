@@ -66,14 +66,14 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         
               <p>
-              I&apos;m Danny Gleason. I love to spend my time learning, building, reading, and hanging with my wife. Graduated Boston College in 2013 and have been an employed software developer for about four years now. Before that, I worked as teacher, spent some time in the medical field, and would, back then, teach myself how to code on nights and weekends. 
+              I&apos;m Danny. Love spend my time learning, building, reading, and hanging with my wife! I graduated Boston College in 2013 and have been employed as a software developer for the last four years now. Before that, I was working as a middle school teacher, spent some time in the medical field prepping for medical school (before I changed directions), and would, even back then, teach myself how to code on nights and weekends and think up apps I wanted to build. 
               </p>
               <p>
-              For the past four years, I&apos;ve been fortunate to work for a number of large companies as a developer and freelance some on the side, as well.
+              For the past four years, I&apos;ve been fortunate to work for a number of large companies as a software developer and freelance some on the side, as well.
         
               </p>
               <p>
-              If you&apos;re interested in collaborating or have a specific question, please feel free to reach out. Peace!
+              If you&apos;re interested in collaborating or have any specific questions, please do not hesitate to reach out. Peace!
               </p>
             </div>
           </div>
