@@ -11,14 +11,14 @@ import logoBundle from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Bundle - Frontend',
+    name: 'Recently built frontend (web app)',
     description:
       'Built using React.js and Next.js.',
     link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'github.com' },
     logo: logoBundle,
   },
   {
-    name: 'Bundle - API',
+    name: 'Recently built API',
     description:
       'Built in Node.js, Express.js, uses Mongoose. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
     link: { href: 'https://github.com/dcgleason/yay-api', label: 'github.com' },
