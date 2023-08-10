@@ -66,7 +66,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         
               <p>
-              My name is Danny. Love spend my time learning, building, and reading (and hanging with my wife)! I graduated Boston College in 2013 and have been employed as a software developer for the last four years now. Before that, I was working in the medical field prepping for medical school (before I changed direction), and before that I briefly worked as a middle school teacher (religous studies). During this time, I started to teach myself to code in my free time and just always loved it. 
+              My name is Danny. Love spend my time learning, building, and reading (and hanging with my wife)! I graduated Boston College in 2013 and have been employed as a software developer for the last four years now. Before that, I was working in the medical field prepping for medical school (before I changed directions), and before that I briefly worked as a middle school teacher (religous studies). During this time, I would teach myself to code, purely out of interest, and just always loved it. 
               </p>
               <p>
               For the past four years, I&apos;ve been fortunate to work for a number of large companies as a software developer and freelance some on the side, as well.
