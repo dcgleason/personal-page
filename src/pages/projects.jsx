@@ -28,7 +28,7 @@ const projects = [
     name: 'Recently built mobile app',
     description:
       'Built in React Native and Expo.',
-    link: { href: 'https://github.com/dcgleason/bundlMobile', label: 'github.com' },
+    link: { href: 'https://github.com/dcgleason/bundl-mobile-app', label: 'github.com' },
     logo: logoBundle,
   }
 ]
