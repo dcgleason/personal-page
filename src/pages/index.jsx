@@ -270,7 +270,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Danny, a software developer and creator based in Connecticut. I work using a technology called ServiceNow, but enjoy developing in many different spaces using different tools and web development frameworks."
+          content="I’m Danny, a software developer and creator based in Connecticut. I mostly in using a tool called ServiceNow, but I also enjoy developing in many different spaces using different libraries and web development frameworks."
         />
       </Head>
       <Container className="mt-9">
