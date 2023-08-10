@@ -279,7 +279,7 @@ export default function Home({ articles }) {
             Software developer,  learner, and creator
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Danny, a developer based in Connecticut. I work a platform called ServiceNow and and mainly focus my attention on improving ServiceNow instance performance for my clients. I also enjoy developing in many different spaces using different tools and frameworks in my free time.  
+          I’m Danny, a developer based in Connecticut. I work the platform called ServiceNow but enjoy developing web and mobile apps using different tools and frameworks in my free time.  
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
