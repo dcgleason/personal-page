@@ -61,17 +61,15 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hi there! I&apos;m Danny Gleason, a creative spirit nestled in a charming small town of Connecticut.
+              Hi there! I&apos;m Danny Gleason. 
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+        
               <p>
-              My journey into the digital world began in 2015 when I discovered the I loved to code and realized I could use it to help facilitate creative expression. Before this, I expressed my creativity through the lenses of photography and music. While I still enjoy these hobbies, my creative focus has shifted towards tech -- crafting engaging frontends in React, buidling backend API to support / provide functionality, and developing apps on the Now Platform.
+              Love to learn, build, and read! Since graduating Boston College in 2013, I've had the opportunity to do a lot of each of those three passions of mine. 
               </p>
               <p>
-              In addition to creating, I love to learn and read about leadership studies and tech. This passion for learning and creating has guided me through a diverse range of fields since graduating college in 2013, gifting me with invaluable experiences that I wouldn&apos;t trade for the world.
-              </p>
-              <p>
-              For the past four years, I&apos;ve been fortunate to work in the field of Servicenow. Aongside my day job, I&apos;ve been moonlighting on a personal project I&apos;ve named &quot;Bundle.&quot;
+              For the past four years, I&apos;ve been fortunate to work in the field of Servicenow and freelance as a web and mobile app developer.
         
               </p>
               <p>
