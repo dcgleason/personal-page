@@ -61,12 +61,12 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hi there! I&apos;m Danny Gleason. 
+              Hi there! 
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         
               <p>
-              Love to learn, build, and read! Since graduating Boston College in 2013, I've had the opportunity to do a lot of each of those three passions of mine. 
+              I&apos;m Danny Gleason. Love to learn, build, and read! Since graduating Boston College in 2013, I've had the opportunity to do a lot of each of those three passions of mine. 
               </p>
               <p>
               For the past four years, I&apos;ve been fortunate to work in the field of Servicenow and freelance as a web and mobile app developer.
