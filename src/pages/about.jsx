@@ -66,7 +66,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
         
               <p>
-              I&apos;m Danny Gleason. Love to learn, build, and read! Since graduating Boston College in 2013, I've had the opportunity to do a lot of each of those three passions of mine. 
+              I&apos;m Danny Gleason. Love to learn, build, and read! Since graduating Boston College in 2013, I&apos;ve had the opportunity to do a lot of each of those three passions of mine. 
               </p>
               <p>
               For the past four years, I&apos;ve been fortunate to work in the field of Servicenow and freelance as a web and mobile app developer.
