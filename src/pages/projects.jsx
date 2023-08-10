@@ -23,6 +23,13 @@ const projects = [
       'Built in Node.js, Express.js, uses Mongoose. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
     link: { href: 'https://github.com/dcgleason/yay-api', label: 'github.com' },
     logo: logoBundle,
+  },
+  {
+    name: 'Recently built mobile app',
+    description:
+      'Built in React Native and Expo.',
+    link: { href: 'https://github.com/dcgleason/bundlMobile', label: 'github.com' },
+    logo: logoBundle,
   }
 ]
 
