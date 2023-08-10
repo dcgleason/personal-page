@@ -14,21 +14,21 @@ const projects = [
     name: 'Recently built frontend (web app)',
     description:
       'Built using React.js and Next.js.',
-    link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'github.com' },
+    link: { href: 'https://github.com/dcgleason/bundle-landing-page', label: 'link to repo' },
     logo: logoBundle,
   },
   {
     name: 'Recently built API',
     description:
       'Built in Node.js, Express.js, uses Mongoose. Handles sending of emails, connecting to MongoDB, creating PDFs, scheduled jobs. ',
-    link: { href: 'https://github.com/dcgleason/yay-api', label: 'github.com' },
+    link: { href: 'https://github.com/dcgleason/yay-api', label: 'link to repo' },
     logo: logoBundle,
   },
   {
     name: 'Recently built mobile app',
     description:
       'Built in React Native and Expo.',
-    link: { href: 'https://github.com/dcgleason/bundl-mobile-app', label: 'github.com' },
+    link: { href: 'https://github.com/dcgleason/bundl-mobile-app', label: 'link to repo' },
     logo: logoBundle,
   }
 ]
@@ -48,15 +48,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Danny Gleason</title>
         <meta
           name="description"
-          content="My most recent personal projects."
+          content="My most recent projects."
         />
       </Head>
       <SimpleLayout
         title="Things I’ve made trying to put my dent in the universe."
-        intro="Below is my most recent personal work. Feel free to contact me if you have any questions."
+        intro="Below is my most recent work. Feel free to contact me if you have any questions."
       >
         <ul
           role="list"
